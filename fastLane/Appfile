@@ -1,0 +1,3 @@
+app_identifier "app_identifier_string" # The bundle identifier of your app
+
+apple_id "apple_email_string" # Your Apple email address

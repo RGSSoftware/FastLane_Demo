@@ -1,0 +1,63 @@
+
+submit_for_review true
+
+force true
+
+name(
+  'en-US' => "app_name_string"
+)
+
+description(
+  'en-US' => "app_description_string"
+)
+
+keywords(
+  'en-US' => "wisdom,famous,inspiring,sayings,quick,love,text,life,motivational,balanced,inspired,caption,free,day"
+)
+
+marketing_url(
+  'en-US' => "http://www.randelsmith.com/"
+)
+
+support_url(
+  'en-US' => 'http://www.randelsmith.com/'
+)
+
+basePath = "./fastlane/"
+app_icon basePath + "Icon.png"
+
+price_tier 0 # free app
+
+copyright "#{Time.now.year} Randel Smith"
+
+primary_category "Reference"
+
+secondary_category "Lifestyle"
+
+automatic_release true
+
+app_rating_config_path basePath + "ratings_config.json"
+
+app_review_information({
+  first_name: "Randel",
+  last_name: "Smith",
+  phone_number: "+15555551234",
+  email_address: "rs@randelsmith.com",
+  demo_user: "",
+  demo_password: "",
+  notes: ""
+})
+
+submission_information({
+add_id_info_limits_tracking:true,
+add_id_info_serves_ads:true,
+add_id_info_tracks_action:true,
+add_id_info_tracks_install:true,
+add_id_info_uses_idfa:true,
+content_rights_contains_third_party_content:false,
+export_compliance_contains_proprietary_cryptography:false,
+export_compliance_contains_third_party_cryptography:false,
+export_compliance_uses_encryption:false,
+export_compliance_encryption_updated:false,
+export_compliance_compliance_required:false,
+})

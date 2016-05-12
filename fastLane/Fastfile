@@ -1,0 +1,20 @@
+lane :appstore do
+  produce(
+    username: 'apple_email_sting',
+    app_name: 'app_name_string',
+    language: 'English',
+    app_version: '1.0',
+    sku: 'app_identifier_string'
+    )
+  
+  match
+      
+  snapshot
+  
+  gym(scheme: 'build_scheme_string')
+
+  ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
+
+  deliver(force: true)
+
+end
